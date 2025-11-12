@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adobe Fonts - Quador Bold Italic */
+.font-quador {
+  font-family: "quador", Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.logo-text {
+  font-family: "quador", Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbars in desktop mode only */
+@media (min-width: 768px) {
+  /* For Webkit browsers (Chrome, Safari) */
+  .overflow-y-auto::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .overflow-y-auto {
+    scrollbar-width: none;
+  }
+  
+  /* For IE/Edge */
+  .overflow-y-auto {
+    -ms-overflow-style: none;
+  }
+  
+  /* For Webkit browsers (Chrome, Safari) */
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .overflow-x-auto {
+    scrollbar-width: none;
+  }
+  
+  /* For IE/Edge */
+  .overflow-x-auto {
+    -ms-overflow-style: none;
+  }
+  
+  /* Custom scrollbar hide class for textareas */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 768px) {
+  .line-clamp-2 {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+  
+  .max-w-3xl {
+    max-width: 100%;
+  }
+  
+  .p-6 {
+    padding: 1rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .text-xl {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  /* Mobile header improvements */
+  .border-b.border-slate-700.p-2 {
+    padding: 0.5rem;
+  }
+  
+  .border-b.border-slate-700.p-3 {
+    padding: 0.75rem;
+  }
+  
+  .text-base.font-semibold {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  /* Z-index adjustments for proper layering */
+  .z-30 {
+    z-index: 30;
+  }
+  
+  .z-20 {
+    z-index: 20;
+  }
+  
+  .z-10 {
+    z-index: 10;
+  }
+  
+  .z-0 {
+    z-index: 0;
+  }
+  
+  /* Flexbox improvements for fixed positioning */
+  .flex.flex-col.h-screen {
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Ensure proper scrolling behavior */
+  .flex-1.overflow-y-auto {
+    flex: 1 1 0%;
+    overflow-y: auto;
+  }
+  
+  /* Fixed elements */
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  
+  /* Sticky header */
+  .sticky.top-0 {
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Sidebar positioning */
+  .notes-sidebar.absolute {
+    position: absolute;
+  }
+  
+  .notes-sidebar.absolute.md\:relative {
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .notes-sidebar.absolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
