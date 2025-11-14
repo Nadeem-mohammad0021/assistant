@@ -233,10 +233,10 @@ export function Help() {
   const activeSectionData = helpSections.find(section => section.id === activeSection);
 
   return (
-    <div className="min-h-screen bg-slate-900 py-3 md:py-4 max-w-full">
+    <div className="min-h-screen bg-slate-900 py-3 md:py-4 max-w-full pt-20 md:pt-0">
       <div className="max-w-7xl mx-auto px-3 md:px-4">
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-white mb-2">KYNEX.dev Help Center</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">Help Center</h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-sm">
             Find answers to common questions and learn how to make the most of your KYNEX.dev experience.
           </p>

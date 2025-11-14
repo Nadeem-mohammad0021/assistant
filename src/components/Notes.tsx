@@ -710,7 +710,7 @@ export function Notes() {
  
         <div className="p-3 space-y-2 border-b border-slate-700 pt-3">
           <div className="mb-3">
-            <h1 className="text-2xl font-bold text-white">Notes</h1>
+            <h1 className="text-3xl font-bold text-white">Notes</h1>
             <p className="text-slate-400 text-xs">Create and manage your notes</p>
           </div>
           <button

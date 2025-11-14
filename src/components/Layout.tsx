@@ -157,14 +157,14 @@ export function Layout({ children, activeView, onViewChange }: LayoutProps) {
         </div>
       </aside>
 
-      <div className="flex-1 md:pl-64 pt-12 md:pt-0 max-w-full">
+      <div className="flex-1 md:pl-64 pt-20 md:pt-0 max-w-full">
         {/* Mobile header - visible only on small screens */}
         <header className="md:hidden fixed top-0 left-0 w-full z-30 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700 px-4 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3 min-w-0 flex-1">
               {/* Make the mobile logo clickable */}
               <a href="/" className="flex items-center gap-2 flex-shrink-0">
-                <Logo size="md" showImage={true} />
+                <Logo size="lg" showImage={true} />
               </a>
             </div>
             
@@ -172,26 +172,26 @@ export function Layout({ children, activeView, onViewChange }: LayoutProps) {
               {/* Notification Bell for Mobile - Always visible */}
               <button 
                 onClick={() => onViewChange('notifications')}
-                className="relative p-2 text-slate-400 hover:text-white transition-colors"
+                className="relative p-1 text-slate-400 hover:text-white transition-colors"
               >
-                <Bell className="w-5 h-5" />
+                <Bell className="w-4 h-4" />
                 {unreadCount > 0 && (
-                  <div className="absolute -top-1 -right-1 w-5 h-5 bg-cyan-500 text-white text-xs rounded-full flex items-center justify-center">
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-cyan-500 text-white text-[8px] rounded-full flex items-center justify-center">
                     {unreadCount > 9 ? '9+' : unreadCount}
                   </div>
                 )}
               </button>
               
               {/* Profile icon for mobile */}
-              <div className="w-8 h-8 rounded-full bg-cyan-500/10 flex items-center justify-center flex-shrink-0">
-                <User className="w-4 h-4 text-cyan-400" />
+              <div className="w-6 h-6 rounded-full bg-cyan-500/10 flex items-center justify-center flex-shrink-0">
+                <User className="w-3 h-3 text-cyan-400" />
               </div>
               
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-slate-400 hover:text-white transition-colors p-2 flex-shrink-0"
+                className="text-slate-400 hover:text-white transition-colors p-1 flex-shrink-0"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
               </button>
             </div>
           </div>
@@ -208,7 +208,7 @@ export function Layout({ children, activeView, onViewChange }: LayoutProps) {
                       onViewChange(item.id);
                       setMobileMenuOpen(false);
                     }}
-                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
+                    className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-all text-base ${
                       isActive
                         ? 'bg-cyan-500/10 text-cyan-400'
                         : 'text-slate-400 hover:bg-slate-700/50 hover:text-white'
@@ -221,7 +221,7 @@ export function Layout({ children, activeView, onViewChange }: LayoutProps) {
               })}
               <button
                 onClick={signOut}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <LogOut className="w-5 h-5" />
                 <span className="font-medium">Sign Out</span>

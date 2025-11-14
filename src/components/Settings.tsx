@@ -160,9 +160,9 @@ export function Settings() {
   };
 
   return (
-    <div className="min-h-screen p-3 md:p-4 max-w-full">
+    <div className="min-h-screen p-3 md:p-4 max-w-full pt-20 md:pt-0">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl font-bold text-white mb-1">Settings</h1>
+        <h1 className="text-3xl font-bold text-white mb-1">Settings</h1>
         <p className="text-slate-400 mb-6 text-sm">Manage your account and preferences</p>
 
         <div className="space-y-6">

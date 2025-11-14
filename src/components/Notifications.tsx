@@ -59,10 +59,10 @@ export function Notifications() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 pt-3 md:pt-4 max-w-full">
+    <div className="min-h-screen bg-slate-900 pt-3 md:pt-4 max-w-full pt-20 md:pt-0">
       <div className="max-w-4xl mx-auto px-3 md:px-4">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-white mb-1">Notifications</h1>
+          <h1 className="text-3xl font-bold text-white mb-1">Notifications</h1>
           <p className="text-slate-400 text-sm">Stay updated with your team messages and reminders</p>
         </div>
 

@@ -864,7 +864,7 @@ export function Chat() {
   <div className={`conversation-sidebar w-56 bg-slate-800 backdrop-blur-sm border-r border-slate-700 flex flex-col md:sticky md:top-0 md:z-30 ${isMobileSidebarOpen ? 'fixed top-22 left-0 bottom-0 z-25 block' : 'hidden'} md:block overflow-y-auto`}>
         <div className="p-3 space-y-2 border-b border-slate-700 pt-3">
           <div className="mb-3">
-            <h1 className="text-2xl font-bold text-white">Conversations</h1>
+            <h1 className="text-3xl font-bold text-white">Conversations</h1>
             <p className="text-slate-400 text-xs">Chat with KYNEX.dev AI Assistant</p>
           </div>
           <button
@@ -1051,7 +1051,7 @@ export function Chat() {
       {isMobileSidebarOpen && (
         <div
           onClick={() => setIsMobileSidebarOpen(false)}
-          className="fixed top-32 left-0 right-0 bottom-0 bg-black/50 z-15 md:hidden"
+          className="fixed top-22 left-0 w-56 bottom-0 bg-black/50 z-15 md:hidden"
         />
       )}
 

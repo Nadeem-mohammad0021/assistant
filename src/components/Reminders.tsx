@@ -316,11 +316,11 @@ export function Reminders() {
   ));
 
   return (
-    <div className="min-h-screen p-3 md:p-4 max-w-full">
+    <div className="min-h-screen p-3 md:p-4 max-w-full pt-20 md:pt-0">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
           <div>
-            <h1 className="text-2xl font-bold text-white mb-1">Reminders</h1>
+            <h1 className="text-3xl font-bold text-white mb-1">Reminders</h1>
             <p className="text-slate-400 text-sm">Stay organized with smart reminders</p>
           </div>
           <button

@@ -124,6 +124,47 @@ body {
     line-height: 1.5rem;
   }
   
+  /* Adjustments for increased header size */
+  .pt-12 {
+    padding-top: 1rem;
+  }
+  
+  .pt-16 {
+    padding-top: 1.5rem;
+  }
+  
+  .pt-20 {
+    padding-top: 2rem;
+  }
+  
+  .top-12 {
+    top: 3rem;
+  }
+  
+  .top-16 {
+    top: 4rem;
+  }
+  
+  .top-20 {
+    top: 5rem;
+  }
+  
+  .top-22 {
+    top: 5.5rem;
+  }
+  
+  .top-24 {
+    top: 6rem;
+  }
+  
+  .top-32 {
+    top: 8rem;
+  }
+  
+  .top-36 {
+    top: 9rem;
+  }
+  
   /* Z-index adjustments for proper layering */
   .z-30 {
     z-index: 30;

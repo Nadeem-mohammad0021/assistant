@@ -177,11 +177,11 @@ export function Dashboard() {
   }
 
   return (
-    <div className="p-3 md:p-4 max-w-full">
+    <div className="p-3 md:p-4 max-w-full pt-20 md:pt-0">
       <div className="max-w-7xl mx-auto">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-white mb-1">Welcome back!</h1>
-          <p className="text-slate-400 text-sm">Here's what's happening with your KYNEX.dev workspace</p>
+          <h1 className="text-3xl font-bold text-white mb-1">Welcome back!</h1>
+          <p className="text-slate-400 text-base">Here's what's happening with your KYNEX.dev workspace</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">

@@ -820,7 +820,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
       </aside>
 
       {/* Mobile header with logo - visible only on small screens */}
-      <header className="md:hidden fixed top-0 left-0 w-full z-20 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700 px-5 py-4">
+      <header className="md:hidden fixed top-0 left-0 w-full z-20 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700 px-4 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* Make the mobile logo clickable */}
@@ -829,18 +829,18 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
             </a>
           </div>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {/* Profile icon for mobile */}
-            <div className="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center">
-              <User className="w-5 h-5 text-cyan-400" />
+            <div className="w-6 h-6 rounded-full bg-cyan-500/10 flex items-center justify-center">
+              <User className="w-3 h-3 text-cyan-400" />
             </div>
             
             <button
               id="mobile-menu-button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-slate-400 hover:text-white transition-colors p-2"
+              className="text-slate-400 hover:text-white transition-colors p-1"
             >
-              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
           </div>
         </div>
@@ -854,7 +854,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   window.location.href = '/';
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <Home className="w-5 h-5" />
                 <span className="font-medium">Dashboard</span>
@@ -869,7 +869,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <MessageSquare className="w-5 h-5" />
                 <span className="font-medium">Chat</span>
@@ -884,7 +884,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <BookOpen className="w-5 h-5" />
                 <span className="font-medium">Notes</span>
@@ -899,7 +899,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <Bell className="w-5 h-5" />
                 <span className="font-medium">Reminders</span>
@@ -914,7 +914,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-cyan-500/10 text-cyan-400 transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-400 transition-all text-base"
               >
                 <Users className="w-5 h-5" />
                 <span className="font-medium">Team</span>
@@ -929,7 +929,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <Settings className="w-5 h-5" />
                 <span className="font-medium">Settings</span>
@@ -944,14 +944,14 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   }, 100);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <HelpCircle className="w-5 h-5" />
                 <span className="font-medium">Help</span>
               </button>
               <button
                 onClick={clearTeamChat}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-red-400 hover:bg-red-500/20 hover:text-red-300 transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-red-400 hover:bg-red-500/20 hover:text-red-300 transition-all text-base"
               >
                 <Trash2 className="w-5 h-5" />
                 <span className="font-medium">Clear Chat</span>
@@ -963,7 +963,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
                   window.dispatchEvent(signOutEvent);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all"
+                className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-700/50 hover:text-white transition-all text-base"
               >
                 <LogOut className="w-5 h-5" />
                 <span className="font-medium">Sign Out</span>
@@ -973,7 +973,7 @@ const handleKeyPress = (e: React.KeyboardEvent) => {
         )}
       </header>
 
-      <div className="flex-1 flex flex-col pt-16 overflow-hidden md:pt-0 lg:ml-64 pb-24 lg:pb-0">
+      <div className="flex-1 flex flex-col pt-20 overflow-hidden md:pt-0 lg:ml-64 pb-24 lg:pb-0">
         <>
           <div className="flex-1 flex flex-col mt-0 md:mt-0 mb-0 pt-0 md:pt-0 overflow-hidden">
             {/* Chat messages container */}
